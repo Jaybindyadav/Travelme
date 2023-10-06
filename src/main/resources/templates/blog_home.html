@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website icon" type="png" th:href="@{/image/blogging.png}">
+    <link rel="stylesheet" th:href="@{css/blog_home.css}">
+    <script th:src="@{https://apis.google.com/js/client.js?onload=init}"></script>
+    <title>Blog</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img th:src="@{image/blog_logo.png}" class="logo">
+        <ul class="link-container">
+            <li class="link-item"><a class="link">Home</a></li>
+            <li class="link-item"><a th:href="@{editor}" class="link">write</a></li>
+        </ul>
+
+    </nav>
+    <header class="header">
+        <div class="content">
+            <h1 class="heading">
+                <span class="small">Welcome in the world of blog </span>
+                <span class="no-fill"> writing</span>
+            </h1>
+            <a th:href="@{editor}" class="btn">write a Blog</a>
+        </div>
+    </header>
+    <section class="blogs-section">
+        <div class="blog-card">
+            <img th:src="@{image/lorem.jpg}" class="blog-image">
+            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur</h1>
+            <p class="blog-overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a th:href="@{blog}" class="btn dark">Read Me </a>
+        </div>
+
+    </section>
+    <script th:src="@{https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js}"></script>
+    <script th:src="@{https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js}"></script>
+    <script th:src="@{javascript/blog_firebase.js}"></script>
+    <script th:src="@{javascript/blog_home.js}"></script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{https://unpkg.com/boxicons@latest/css/boxicons.min.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="Website icon" type="png" th:href="@{/image/plane.png}">
+    <title>TravelMe</title>
+</head>
+
+<body>
+    <header>
+        <div class="brand-logo">
+            <img th:src="@{image/logo.png}">
+        </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a th:href="@{map}">Searchplace</a></li>
+            <li><a th:href="@{hill}">Visit</a></li>
+            <li><a th:href="@{blog}">Blog</a></li>
+            <li><a th:href="@{galleryhome}">Gallery</a></li>
+            <li><a th:href="@{upload}">Upload Image</a></li>
+            <li><a th:href="@{profile}">Profile</a></li>
+            <li><a th:href="@{register}">Register</a></li>
+        </ul>
+    </header>
+
+    <section class="home" id="home">
+    </section>
+    <section class="container">
+        <div class="text">
+            <h2>Start your Vacation With lots of services !</h2>
+        </div>
+        <div class="row-iteams">
+            <div class="container-box">
+                <div class="container-img">
+                    <img th:src="@{image/ship.png}">
+                </div>
+                <h3>Ship Cruises</h3>
+                <p>100 Properties</p>
+            </div>
+            <div class="container-box">
+                <div class="container-img">
+                    <img th:src="@{image/mountain.png}">
+                </div>
+                <h3>Mountains Tours</h3>
+                <p>100 Properties</p>
+            </div>
+            <div class="container-box">
+                <div class="container-img">
+                    <img th:src="@{image/summer.png}">
+                </div>
+                <h3>Summer Rest</h3>
+                <p>100 Properties</p>
+            </div>
+        </div>
+    </section>
+    <section class="place">
+        <div class="title">
+            <h2>Popular place</h2>
+        </div>
+        <div class="place-content">
+            <div class="box">
+                <div class="thum">
+                    <img th:src="@{image/ladakh.png}">
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h3>Leh Ladakh</h3>
+                        <div class="content-details">
+                            <details>Ladakh is a union territory in the Kashmir region of India. Formerly
+                                falling in the
+                                state of Jammu & Kashmir, Ladakh was administered a union territory on 31st October
+                                2019.
+                                Extending from the Siachen Glacier to the main Great Himalayas, Ladakh is a land like no
+                                other. Dominated by dramatic landscapes, Ladakh is known as the world's coldest desert.
+
+                                Stunning Gompas (Tibetan Buddhist monasteries), fluttering prayer flags, whitewashed
+                                stupas,
+                                Ladakh is a riot of intricate murals and red-robed monks. With a culture similar to the
+                                Tibetans, the people of Ladakh are friendly and welcoming to tourists.
+
+                                Ladakh is divided into two districts: district Leh and district Kargil. The former
+                                district
+                                has a famous town, "Leh", and is a great tourist attraction because of its beautiful
+                                monasteries nearby, Shanti Stupa, cafes and Leh Bazaar defining the place's culture.
+
+                                Ladakh is an adventure playground for rafting and high-altitude trekking. Note that Leh
+                                Ladakh is inaccessible by road outside the summer months. The route passes close
+                                altogether
+                                from around October to May, and the only way to reach is by air. Chadar trek on frozen
+                                Zanskar river takes place in January to the end of February.</details>
+                        </div>
+                        <h1>Best Time: June to Sep</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="thum">
+                    <img th:src="@{image/manali.png}">
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h3>Manali</h3>
+                        <div class="content-details">
+                            <details> spectacular valleys, breathtaking views, snowcapped mountains, and
+                                lush forests of
+                                oak, deodar, and pine, Manali is a magical hill station at the northern end of Kullu
+                                valley in Himachal Pradesh. Gifted to the world by the mighty Himalayas, it is known to
+                                be one of the most popular destinations for Honeymooners. Manali offers magnificent
+                                views of the Pir Panjal and the Dhauladhar ranges, covered in a thick blanket of snow
+                                for most of the year.
+
+                                Over the last few years, Manali has evolved into a place loved by young people looking
+                                for more extended stays. With ambient cafes, good wifi availability, small eateries, and
+                                convenient shops, Old Manali is among the favorite neighborhood for such people. In
+                                addition, many homestays and hostels offer dorm beds for cheap for longer durations.
+
+                                Apart from vacations and workations, Manali is a must-visit for trekkers, as it's an
+                                excellent base for exploring this side of the Himalayas. River Beas provides great
+                                rafting options in the nearby town of Kullu. Adjoining the Parvati river lies the
+                                Parvati Valley, with Kasol, Manikaran, Tosh, and small villages attracting travelers for
+                                extended stays. Atal Tunnel allows travelers to reach Sissu within a few hours, making
+                                Spiti more accessible.
+
+                                Tourists flock to Rohtang Pass & Solang valley for various adventure activities,
+                                including skiing, paragliding, horse-riding & zorbing. It snows the most in January &
+                                February, followed by December and March. If you're fortunate, you might find some snow
+                                in April.</details>
+                        </div>
+                        <h1>Best Time: October to June</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="thum">
+                    <img th:src="@{image/coorg.png}">
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h3>coorg</h3>
+                        <div class="content-details">
+                            <details>Located amidst imposing mountains in Karnataka with a perpetually
+                                misty landscape,
+                                Coorg is a popular coffee producing hill station. It is popular for its beautiful green
+                                hills and the streams cutting right through them. It also stands as a popular
+                                destination because of its culture and people. The Kodavas, a local clan specializing in
+                                martial arts, are especially notable for their keen hospitality.
+
+                                Coorg, officially known as Kodagu, is the most affluent hill station in Karnataka. It is
+                                well known for its breathtakingly exotic scenery and lush greenery. Forest covered
+                                hills, spice and coffee plantations only add to the landscape. Madikeri is the region's
+                                centre point with all transportation for getting around starting from here. On a visit
+                                to Coorg, cover the beautiful towns like Virajpet, Kushalnagar, Gonikoppal, Pollibetta,
+                                and Somwarpet, and experience the beautiful concept of "homestays" to make your
+                                experience more memorable! </details>
+                        </div>
+                        <h1>Best Time: October to March</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="destination">
+        <div class="title">
+            <h1>Most Popular Place in India</h1>
+        </div>
+        <div class="destination-content">
+            <div class="box">
+                <div class="col-content">
+                    <img th:src="@{image/Andaman.png}" style="height: 200px;">
+                </div>
+                <h2>Andaman and Nicobar</h2>
+                <p>Located: Union Territory</p>
+            </div>
+            <div class="box">
+                <div class="col-content">
+                    <img th:src="@{image/gangtok.png}" style="height: 230px;">
+                </div>
+                <h2>Gangtok</h2>
+                <p>Located: Sikkim</p>
+            </div>
+            <div class="box">
+                <div class="col-content">
+                    <img th:src="@{image/munnar.png}" style="height: 230px;">
+
+                </div>
+                <h2>Munnar</h2>
+                <p>Located: Kerala</p>
+            </div>
+            <div class="box">
+                <div class="col-content">
+                    <img th:src="@{image/Kodaikanal.png}" style="height: 230px;">
+
+                </div>
+                <h2>Kodaikanal</h2>
+                <p>Located: Tamil Nadu</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="hill" id="hill">
+        <div class="title">
+            <h1>Hill Station</h1>
+        </div>
+        <div class="hill-content">
+            <div class="h-content">
+                <img th:src="@{image/hil-1.jpg}">
+                <h1>Wilson Hills</h1>
+                <p>Location: Gujarat</p>
+
+            </div>
+            <div class="h-content">
+                <img th:src="@{image/hil.jpg}">
+                <h1>Chail</h1>
+                <p>Location: Himachal Pradesh</p>
+            </div>
+            <div class="h-content">
+                <img th:src="@{image/hil-2.jpg}">
+                <h1>Paithalmala</h1>
+                <p>Location: Kerala</p>
+            </div>
+            <div class="h-content">
+                <img th:src="@{image/hil-3.jpg}">
+                <h1>Ranipuram</h1>
+                <p>Location: Kerala</p>
+            </div>
+            <div class="h-content">
+                <img th:src="@{image/hil-4.jpg}">
+                <h1>Jogimatti</h1>
+                <p>Location: Karnataka</p>
+            </div>
+            <div class="h-content">
+                <img th:src="@{image/hil-5.jpg}">
+                <h1>Khajjiar Lake</h1>
+                <p>Location: Himachal Pradesh</p>
+            </div>
+            <div class="h-content">
+                <img th:src="@{image/hil-6.jpg}">
+                <h1>Kufri</h1>
+                <p>Location: Shimla</p>
+            </div>
+            <div class="h-content">
+                <img th:src="@{image/hil-7.jpg}">
+                <h1>Doodhpathri</h1>
+                <p>Location: Jammu and Kashmir</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="list">
+                    <h2>Quick Links for social</h2>
+                    <div class="social">
+                        <a th:href="@{https://www.facebook.com/}"><i class='bx bxl-facebook'></i></a>
+                        <a th:href="@{https://www.instagram.com/}"><i class='bx bxl-instagram'></i></a>
+                        <a th:href="@{https://www.twitter.com/}"><i class='bx bxl-twitter'></i></a>
+                        <a th:href="@{https://www.linkedin.com/}"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script type="text/javascript" th:src="@{/javascript/home.js}"></script>
+</body>
+
+</html>

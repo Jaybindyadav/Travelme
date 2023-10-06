@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : Editor</title>
+    <link rel="stylesheet" th:href="@{css/blog_editor.css}">
+    <link rel="stylesheet" th:href="@{css/blog_home.css}">
+</head>
+
+<body>
+    <div class="banner">
+        <input type="file" accept="image/*" id="banner-Upload" hidden>
+        <label for="banner-Upload" class="banner-Upload-btn"><img th:src="@{image/upload.png}"
+                alt="Upload banner"></label>
+    </div>
+
+    <div class="blog">
+        <textarea type="text" class="title" placeholder="Blog title.........."></textarea>
+        <textarea type="text" class="article" placeholder="Start writing here.........."></textarea>
+    </div>
+
+    <div class="blog-option">
+        <button class="btn dark Publish-btn">Publish</button>
+        <input type="file" accept="image/*" id="image-Upload" hidden>
+        <label for="image-Upload" class="btn grey Upload-btn">Upload image</label>
+    </div>
+    <script th:src="@{https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js}"></script>
+    <script th:src="@{https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js}"></script>
+    <script th:src="@{javavscript/blog_editor.js}"></script>
+    <script th:src="@{javavscript/blog_firebase.js}"></script>
+</body>
+
+</html>

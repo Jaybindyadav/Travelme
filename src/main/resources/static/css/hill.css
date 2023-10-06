@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: auto;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: ease .40s;
+}
+
+.brand-logo img {
+    width: 7rem;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 520;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+#menu-icon {
+    color: black;
+    font-size: 2rem;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+header.sticky {
+    background: white;
+    padding: 5px 5%;
+    box-shadow: rgba(3, 5, 8, 0.1) 0px 7px 7px -7px;
+}
+
+.sticky .navbar li {
+    color: black;
+}
+
+
+section {
+    padding: 80px 18%;
+}
+
+
+.carousel-item {
+    height: 99vh;
+    min-height: 150px;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 2rem;
+    line-height: 1rem;
+}
+
+.hill-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.h-content {
+    position: relative;
+}
+
+.h-content img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: blur(80%);
+    transition: all .3s cubic-bezier(.445, .05, .55, .95);
+    will-change: filter;
+}
+
+.h-content h1 {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 650;
+    color: black;
+    right: 15px;
+    top: 20px;
+}
+
+.h-content p {
+    font-size: 20px;
+}
+
+.h-content img:hover {
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.destination-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.col-content {
+
+    position: relative;
+    transition: all .3s cubic-bezier(.445, .05, .55, .95);
+    will-change: filter;
+    cursor: pointer;
+}
+
+.col-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.box h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.box p {
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.col-content:hover {
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+}

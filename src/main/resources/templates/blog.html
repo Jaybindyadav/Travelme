@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog :</title>
+    <link rel="stylesheet" th:href="@{css/blog_editor.css}">
+    <link rel="stylesheet" th:href="@{css/blog.css}">
+    <link rel="stylesheet" th:href="@{css/blog_home.css}">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img th:src="@{image/blog_logo.png}" class="logo">
+        <ul class="link-container">
+            <li class="link-item"><a th:href="@{blog}" class="link">Home</a></li>
+            <li class="link-item"><a th:href="@{editor}" class="link">Editor</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="banner"></div>
+    <div class="blog">
+        <h1 class="title"> </h1>
+        <p class="published"><span>published at -</span></p>
+        <div class="article">
+
+        </div>
+    </div>
+    <h1 class="sub-heading">
+        Read More
+    </h1>
+    <section class="blogs-section">
+        <div class="blog-card">
+            <img th:src="@{image/lorem.jpg}" class="blog-image">
+            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur</h1>
+            <p class="blog-overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a th:href="@{blog}" class="btn dark">Read Me </a>
+        </div>
+
+    </section>
+    <script th:src="@{https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js}"></script>
+    <script th:src="@{https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js}"></script>
+    <script th:src="@{javascript/blog_firebase.js}"></script>
+    <script th:src="@{javascript/blog.js}"></script>
+</body>
+
+</html>
