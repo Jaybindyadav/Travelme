@@ -1,7 +1,6 @@
 package com.example.Travelme.utils;
 
 import com.example.Travelme.entity.User;
-
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.validation.BindingResult;
 

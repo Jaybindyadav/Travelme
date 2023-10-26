@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Website icon" type="png" th:href="@{/image/account.png}">
     <title>Profile</title>
 </head>
+
 <body>
-    You are on profile page.
+    <h1 sec:authorize="isAuthenticated()">
+        Logged in as <span sec:authentication="name"></span>
+    </h1>
+    <h1>Profile page to be implemented</h1>
 </body>
+
 </html>

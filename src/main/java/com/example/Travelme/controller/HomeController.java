@@ -1,7 +1,6 @@
 package com.example.Travelme.controller;
 
 import com.example.Travelme.entity.User;
-
 import com.example.Travelme.repository.UserRepository;
 import com.example.Travelme.utils.ValidationUtils;
 import jakarta.validation.Valid;
@@ -15,8 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class HomeController {
 
-    private UserRepository userRepository;
-    private PasswordEncoder passwordEncoder;
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
     HomeController(UserRepository userRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
@@ -34,25 +33,39 @@ public class HomeController {
     }
 
     @GetMapping("/blog")
-    public String blog(){ return "blog_home.html";}
+    public String blog() {
+        return "blog_home.html";
+    }
 
     @GetMapping("/editor")
-    public String editor(){ return "blog_editor.html";}
+    public String editor() {
+        return "blog_editor.html";
+    }
+
+    @GetMapping("/gallery")
+    public String gallery() {
+        return "gallery.html";
+    }
+
+    @GetMapping("/search")
+    public String search() {
+        return "gallery_search.html";
+    }
 
     @GetMapping("/blogg")
-    public String blogg(){ return "blog.html";}
+    public String blogg() {
+        return "blog.html";
+    }
 
     @GetMapping("/hill")
-    public String hill(){ return "hill.html";}
+    public String hill() {
+        return "hill.html";
+    }
 
     @GetMapping("/profile")
-    public String profile(){ return "profile.html";}
-
-    @GetMapping("/upload")
-    public String upload(){return  "gallery.html";}
-
-    @GetMapping("/galleryhome")
-    public String galleryhome(){ return "gallery_home.html";}
+    public String profile() {
+        return "profile.html";
+    }
 
     @GetMapping("/register")
     public String register(User user, Model model) {

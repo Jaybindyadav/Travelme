@@ -1,7 +1,6 @@
 package com.example.Travelme.repository;
 
 import com.example.Travelme.entity.User;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

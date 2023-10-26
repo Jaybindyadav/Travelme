@@ -6,15 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class TravelMeApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(TravelMeApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(TravelMeApplication.class, args);
+    }
 
 }
-
-
-
-
-
-
-
